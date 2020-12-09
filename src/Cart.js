@@ -10,7 +10,8 @@ class Cart extends React.Component{
                 USCurrencyFormat={this.props.USCurrencyFormat} 
                 total={this.props.total}/>
         
-        <Total selected={this.props.selected}/>
+        <Total selected={this.props.selected} 
+                         USCurrencyFormat={this.props.USCurrencyFormat} />
         
         </div>
 
