@@ -51,9 +51,15 @@ class App extends Component {
         <main>
 
           {/* customizeForm features prop is app's features prop and cF selected prop is coming from App's selected state */}
-        <CustomizeForm selected={this.state.selected} updateFeature={this.updateFeature} USCurrencyFormat={USCurrencyFormat}/>
+        <CustomizeForm 
+          selected={this.state.selected} 
+          updateFeature={this.updateFeature} 
+          USCurrencyFormat={USCurrencyFormat}
+          />
 
-        <Cart selected={this.state.selected} USCurrencyFormat={USCurrencyFormat} />
+        <Cart 
+          selected={this.state.selected} 
+          USCurrencyFormat={USCurrencyFormat} />
         
         </main>
       </div>

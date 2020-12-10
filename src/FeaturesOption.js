@@ -2,14 +2,14 @@ import React from 'react';
 // Normalizes string as a slug - a string that is safe to use
 // in both URLs and html attributes
 import slugify from 'slugify';
-import FEATURES from './FeaturesObject'
+
 
 export default class FeaturesObject extends React.Component{
     render(){
         return(
-            Object.keys(FEATURES).map((feature, idx) => {
+            Object.keys(this.props.FEATURES).map((feature, idx) => {
                 const featureHash = feature + '-' + idx;
-                const options = FEATURES[feature].map(item => {
+                const options = this.props.FEATURES[feature].map(item => {
                   const itemHash = slugify(JSON.stringify(item));
                   return (
                     <div key={itemHash} className="feature__item">
